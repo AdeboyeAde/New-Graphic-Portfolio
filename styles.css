@@ -1,0 +1,501 @@
+@font-face {
+    font-family: Nephilm;
+    src: url(Nephilm.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 152px;
+}
+
+nav {
+    position: relative;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 64px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #292a2c;
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
+    font-size: 16px;
+    line-height: 1;
+    transition: 0.3s;
+    font-family: sans-serif;
+}
+
+.menu li a:hover {
+    color: rgb(9, 204, 204);
+    padding: 35px 25px 45px 25px;
+}
+
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(1, 68, 68);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s;
+    margin-top: 32px;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    right: 0;
+    background: rgb(1, 68, 68);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger:before {
+    top: -10px;
+    width: 20px;
+}
+
+.hamburger:after {
+    top: 10px;
+    width: 25px;
+}
+
+.toggle-menu {
+    position: absolute;
+    margin-left: 8px;
+    width: 20px;
+    height: 67px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.hamburger,
+.toggle-menu {
+    display: none;
+}
+
+.navigation input:checked~.hamburger {
+    background: transparent;
+}
+
+.navigation input:checked~.hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.navigation input:checked~.menu {
+    right: 0;
+}
+
+.logo_img {
+    border-radius: 50%;
+    height: 30px;
+    width: 32px;
+}
+
+.content {
+    color: white;
+    align-items: center;
+    margin: 50px auto;
+    margin-top: 172px;
+}
+
+p {
+    color: white 20%;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: -2px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: Nephilm;
+    color: #e5e5e5;
+    font-size: 50px;
+    text-align: center;
+    padding: 25px 140px;
+    margin-top: -2px;
+    font-weight: medium;
+    animation-duration: 3s;
+    animation-name: slideup;
+}
+
+.learn-more {
+    font-size: 18px;
+    margin-top: 24px;
+    text-align: center;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.more {
+    text-decoration: none;
+    color: rgb(9, 204, 204);
+}
+
+span {
+    color: rgb(9, 204, 204);
+}
+
+.select {
+    text-decoration: none;
+}
+
+.work_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+    /*margin-top: 10rem !important;*/
+}
+
+h3 {
+    font-family: Nephilm;
+    color: #292a2c;
+    font-size: 36px;
+    text-align: center;
+   /*background-color: aqua;*/
+    font-weight: 100;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.work_cards>div {
+    width: 48%;
+    margin-top: 90px;
+}
+
+.desrptn {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 4px;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.title {
+    font-family: Nephilm;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.a_title {
+    text-decoration: none;
+    font-family: Nephilm;
+    color: #292a2c;
+}
+
+footer {
+    background-color: black;
+    margin-top: 120px;
+}
+.footer-content {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+     color: rgb(9, 204, 204);
+}
+
+.footer-bottom {
+    background-color: rgb(26, 26, 26);
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+}
+
+.copy {
+    font-size: 12px;
+}
+
+.get-in-touch {
+    text-decoration: none;
+}
+
+#get-in-touch {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* mobile devices 320px - 480px */
+
+@media (max-width: 768px) {
+
+.hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .menu {
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background: rgb(244, 251, 251);
+        width: 40%;
+        height: 60%;
+        padding-top: 65px;
+    }
+
+    .menu li {
+        width: 70%;
+        padding: 10px;
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+.hero {
+        height: 85vh;
+        width: 100%;
+        background-color: black;
+        margin-bottom: 100px;
+    }
+
+.content {
+    color: white;
+    align-items: center;
+    margin: 20px auto;
+    margin-top: 172px;
+    width: 90%;
+}
+
+h2 {
+    font-family: Nephilm;
+    color: white 20%;
+    font-size: 2.0rem;
+    padding: 10px 2px;
+    text-align: center;
+    width: 100%;
+    font-weight: medium;
+}
+
+p {
+    color: white 20%;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0;
+    font-family: sans-serif;
+}
+    
+.work_cards {  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 85%;
+
+    }
+
+        .work_cards>div {
+            width: 100%;
+            margin-top: 80px;
+        }
+
+        .content {
+            color: white;
+            align-items: center;
+            margin: 50px auto;
+            margin-top: 50px;
+        }
+
+        p {
+            color: white 20%;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px 10px;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+    h2 {
+        font-family: Nephilm;
+        color: white 20%;
+        font-size: 1.7rem;
+        padding: 10px 2px;
+        text-align: center;
+        width: 100%;
+        font-weight: medium;
+    }
+
+    .select {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .more-work {
+        font-size: 1.5rem;
+        margin-top: 80px;
+    }
+
+        .media {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+                .footer-content {
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                           .socials {
+                               list-style: none;
+                               display: flex;
+                               align-items: center;
+                               margin-right: 0;
+                           }
+}
+
+
+/* Small screen laptops 769px - 1024px */
+
+@media (min-width: 769px)and (max-width: 1024px) {
+
+        .hero {
+            height: 95vh;
+            width: 100%;
+            background-color: black;
+            margin-bottom: 100px;
+        }
+
+                .content {
+                    color: white;
+                    align-items: center;
+                    margin: 20px auto;
+                    margin-top: 172px;
+            
+                }
+
+                                h2 {
+                                    font-family: Nephilm;
+                                    color: white 20%;
+                                    font-size: 2.0rem;
+                                    padding: 10px 2px;
+                                    text-align: center;
+                                    width: 100%;
+                                    font-weight: medium;
+                                }
+        
+                p {
+                    color: white 20%;
+                    font-size: 24px;
+                    text-align: center;
+                    padding: 20px 10px;
+                    margin: 0;
+                    font-family: sans-serif;
+                }
+
+}
