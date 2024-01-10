@@ -144,7 +144,7 @@ nav {
   align-items: center;
   margin: 50px auto;
   margin-top: 50px;
-  margin-bottom: 10px;
+  /* margin-bottom: 5000px; */
 }
 
 p {
@@ -156,35 +156,43 @@ p {
   font-family: sans-serif;
 }
 
-h2 {
+/* h2 {
   font-family: "SpaceGrotesk";
   color: #ffffff;
-  font-size: 120px;
+  font-size: 1000px;
   text-align: center;
   padding: 25px 140px;
-  margin-top: -120px;
+  margin-top: -10px;
   line-height: 120px;
-  margin-bottom: -50px;
+  margin-bottom: -140px;
   letter-spacing: -1.92px;
   font-weight: bold;
   animation-duration: 3s;
   animation-name: slideup;
-  background-color: black;
+  background-color: #adbb09;
+} */
+
+.visual {
+  font-family: "SpaceGrotesk";
+  color: #ffffff;
+  margin-bottom: -140px;
+  /* background-color: #adbb09; */
 }
 
 .undertxt {
   font-family: "Test Söhne Buch", "Test Söhne Buch Placeholder", sans-serif;
-  color: #e5e5e5;
-  font-size: 42px;
+  color: white;
+  font-size: 48px;
   text-align: center;
-  padding: 25px 140px;
-  margin-top: 5px;
-  line-height: 54.72px;
+  padding bottom: 1200px;
+  margin-top: 150px;
+  margin-bottom: 1000px;
+  line-height: 50px;
   letter-spacing: -1.92px;
   font-weight: bold;
   animation-duration: 3s;
   animation-name: slideup;
-  background-color: black;
+  /* background-color: red; */
 }
 
 .learn-more {
@@ -207,10 +215,11 @@ span {
 .select {
   text-decoration: none;
   font-family: "Test Söhne Buch", "Test Söhne Buch Placeholder", sans-serif;
-  color: #6c6c6c;
+  color: rgb(161, 161, 161);
   margin-left: -900px;
-  /* background-color: #5f5f5e; */
-  margin-bottom: -50px;
+  margin-top: 400px;
+  /* background-color: green; */
+  margin-bottom: 50px;
   font-size: 24px;
 }
 
@@ -224,6 +233,7 @@ span {
   justify-content: space-between;
   margin: 0 auto;
   width: 80%;
+  margin-top: -50px;
   /*margin-top: 10rem !important;*/
 }
 
@@ -357,7 +367,7 @@ h5 {
 
 main {
   background-color: black;
-  margin-top: -160px;
+  margin-top: -400px;
   /* margin-bottom: 1000px; */
 }
 
@@ -577,26 +587,4 @@ h2 {
   text-align: center;
   width: 100%;
   font-weight: medium;
-}
-
-.undertxt {
-  font-family: "Test Söhne Buch", "Test Söhne Buch Placeholder", sans-serif;
-  color: #e5e5e5;
-  font-size: 3.5rem;
-  text-align: center;
-  padding: 0;
-  margin-top: 150px;
-  line-height: 80px;
-  letter-spacing: auto;
-  font-weight: bold;
-  animation-duration: 3s;
-  animation-name: slideup;
-  /* background-color: rgb(223, 45, 45); */
-}
-
-.select {
-  font-size: 50px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  margin-left: -30px;
 }
